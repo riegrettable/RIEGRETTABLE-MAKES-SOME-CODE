@@ -5,10 +5,10 @@
 
 export const typography = {
   // Headings
-  h1: "text-4xl sm:text-5xl font-bold leading-tight text-balance",
-  h2: "text-2xl sm:text-3xl font-bold leading-tight text-balance",
-  h3: "text-lg sm:text-xl font-bold leading-snug",
-  h4: "text-base sm:text-lg font-bold",
+  h1: "text-3xl sm:text-4xl font-bold leading-tight text-balance",
+  h2: "text-xl sm:text-2xl font-bold leading-tight text-balance",
+  h3: "text-lg font-bold leading-snug",
+  h4: "text-base font-bold",
 
   // Body text
   body: "text-base leading-relaxed",
