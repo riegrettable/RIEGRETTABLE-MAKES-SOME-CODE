@@ -202,7 +202,7 @@ export default function ColorCovidCaseStudy() {
 
             <div className="mt-8">
               <ImageLightbox
-                src="/images/barcode.jpg"
+                src="/images/barcode.jpeg"
                 alt="COVID-19 testing station setup with clinician scanning test tube barcodes using external scanner, showing organized box of test tubes, tablet device, and hand sanitizer"
                 width={1200}
                 height={900}
