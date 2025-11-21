@@ -255,6 +255,21 @@ export default function K12TestingPage() {
               </div>
             </section>
 
+            {/* Timeline Negotiation Callout */}
+            <section className="my-12 bg-gradient-to-br from-primary/5 to-accent/5 p-6 sm:p-8 rounded-lg border-l-4 border-primary shadow-sm">
+              <h2 className={cn(typography.h2, "mb-4 text-primary")}>Negotiating timelines</h2>
+              <p className={cn(typography.body, "mb-4")}>
+                It would not be possible for our engineer to build the search-first solution in one week. We either
+                needed to develop the list view UI, which we knew was not usable, or we needed a deadline extension to
+                build the search-first experience.
+              </p>
+              <p className={typography.body}>
+                Because the Commercial Team had seen firsthand the value of the search-first experience, my team
+                received a deadline extension. But now, I had a new design challenge: the UI needed to be optimized for
+                mobile.
+              </p>
+            </section>
+
             <section className="mb-16">
               <h2 className="text-2xl font-semibold mb-6">Iteration 2: Search-first</h2>
               <p className="text-lg leading-relaxed mb-4">
@@ -355,20 +370,6 @@ export default function K12TestingPage() {
                   </p>
                 </div>
               </div>
-            </section>
-
-            <section className="mb-16">
-              <h2 className={cn(typography.h2, "mb-4")}>Negotiating timelines</h2>
-              <p className={typography.body}>
-                It would not be possible for our engineer to build the search-first solution in one week. We either
-                needed to develop the list view UI, which we knew was not usable, or we needed a deadline extension to
-                build the search-first experience.
-              </p>
-              <p className={typography.body}>
-                Because the Commercial Team had seen firsthand the value of the search-first experience, my team
-                received a deadline extension. But now, I had a new design challenge: the UI needed to be optimized for
-                mobile.
-              </p>
             </section>
 
             <section className="mb-16">
