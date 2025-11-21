@@ -179,16 +179,6 @@ export default function K12TestingPage() {
                   </ul>
                 </div>
               </div>
-
-              <div className="mt-8">
-                <ImageLightbox
-                  src="/images/3-pooled-testing.webp"
-                  alt="Workflow diagram showing the roles of Principal and Nurse in pooled testing process from creating pools to notifying guardians"
-                  width={1200}
-                  height={400}
-                  className="rounded-lg"
-                />
-              </div>
             </section>
 
             <section className="mb-16">
@@ -204,6 +194,16 @@ export default function K12TestingPage() {
                 Under this assumption, I adapted the logged in homepage to reflect a list of pools instead of a list of
                 all patients.
               </p>
+
+              <div className="mt-8 mb-8">
+                <ImageLightbox
+                  src="/images/3-pooled-testing.webp"
+                  alt="Workflow diagram showing the roles of Principal and Nurse in pooled testing process from creating pools to notifying guardians"
+                  width={1200}
+                  height={400}
+                  className="rounded-lg"
+                />
+              </div>
 
               <div className="mt-8">
                 <ImageGallery
