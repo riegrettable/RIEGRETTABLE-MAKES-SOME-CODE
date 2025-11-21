@@ -2,12 +2,12 @@ import Link from "next/link"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 const projects = [
-  { id: "lumi", title: "Lumi AI Learning Companion" },
-  { id: "covid-19", title: "COVID-19 Response at Color Health" },
-  { id: "k12-testing", title: "K-12 Pooled Testing Solutions" },
-  { id: "gender-affirming", title: "Designing Gender-Affirming Experiences at Color Health" },
+  { id: "lumi", title: "Lumi: Designing AI tools that support learning" },
+  { id: "covid-19", title: "Color: Designing COVID-19 testing solutions at scale" },
+  { id: "k12-testing", title: "Color: Testing Solutions for K-12 Schools" },
+  { id: "gender-affirming", title: "Color: Gender-Affirming Healthcare" },
   { id: "hitag", title: "HiTag: Global Fish Tracking" },
-  { id: "her", title: "HER Profile Redesign" },
+  { id: "her", title: "HER: Profiles and Communities" },
 ]
 
 interface CaseStudyNavProps {
@@ -30,7 +30,7 @@ export function CaseStudyNav({ currentProjectId }: CaseStudyNavProps) {
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
-              Previous: {previousProject.title}
+              Previous - {previousProject.title}
             </Link>
           )}
         </div>
@@ -42,7 +42,7 @@ export function CaseStudyNav({ currentProjectId }: CaseStudyNavProps) {
               href={`/product-design/${nextProject.id}`}
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              Next: {nextProject.title}
+              Next - {nextProject.title}
               <ArrowRight className="w-4 h-4" />
             </Link>
           )}
