@@ -209,15 +209,15 @@ export default function K12TestingPage() {
                 <ImageGallery
                   images={[
                     {
-                      src: "/images/4.1-pooled-testing.jpg",
+                      src: "/images/4.1-pooled-testing.png",
                       alt: "Pooled testing dashboard showing list of classroom pools with model annotation: 1 row = 1 classroom = 1 pool",
                     },
                     {
-                      src: "/images/4.2-pooled-testing.jpg",
+                      src: "/images/4.2-pooled-testing.png",
                       alt: "Member confirmation screen showing nurse adding students from class to the pool",
                     },
                     {
-                      src: "/images/4.3-pooled-testing.jpg",
+                      src: "/images/4.3-pooled-testing.png",
                       alt: "Sample collection screen showing nurse adding pool barcode information",
                     },
                   ]}
