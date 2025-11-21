@@ -85,9 +85,17 @@ export default function Portfolio() {
               <div>
                 <h3 className={typography.h3}>Lumi, Founding Designer</h3>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                  Drove 0-to-1 product development for an AI-powered storytelling tool for K-12 schools. Leading product
-                  strategy and design, transforming how students engage with writing through research-backed educational
-                  scaffolding.
+                  Drove 0-to-1 product development for an{" "}
+                  <a
+                    href="https://www.opb.org/article/2025/08/06/colin-kaepernick-surprise-visit-pps-ai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-foreground transition-colors"
+                  >
+                    AI-powered storytelling tool
+                  </a>{" "}
+                  for K-12 schools. Leading product strategy and design, transforming how students engage with writing
+                  through research-backed educational scaffolding.
                 </p>
               </div>
             </div>
