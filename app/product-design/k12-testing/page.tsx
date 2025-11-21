@@ -258,53 +258,6 @@ export default function K12TestingPage() {
             <section className="mb-16">
               <h2 className={cn(typography.h2, "mb-4")}>Iteration 2: Search-first</h2>
               <p className={typography.body}>
-                We only had one engineer on this project, and we might need to ship a functioning product with a week's
-                notice. Therefore, we decided as a team to reuse as much of the existing experience as possible.
-              </p>
-              <p className={typography.body}>
-                For K-12 schools, we operated under the assumption that 1 pool = 1 classroom.
-              </p>
-              <p className={typography.body}>
-                Under this assumption, I adapted the logged in homepage to reflect a list of pools instead of a list of
-                all patients.
-              </p>
-            </section>
-
-            <section className="mb-16">
-              <div className="bg-muted/30 p-4 sm:p-6 rounded-lg border border-border">
-                <h3 className={cn(typography.h3, "mb-4")}>Feedback</h3>
-                <p className={cn(typography.body, "mb-4")}>
-                  I created a prototype for the Commercial Team to share with potential customers. We received feedback
-                  from Cincinnati Public Schools which upended a handful of our assumptions.
-                </p>
-
-                <h4 className={cn(typography.h4, "mb-4 mt-6")}>New users: Teachers</h4>
-                <p className={cn(typography.body, "mb-4")}>Teachers, not nurses, would conduct testing</p>
-                <p className={cn(typography.body, "mb-2")}>Unlike nurses:</p>
-                <ul className={cn(typography.body, "space-y-2 list-disc list-inside mb-4")}>
-                  <li>Teachers may not have experience with clinical tools</li>
-                  <li>Teachers may not have a clinical background</li>
-                  <li>It was unlikely they would have bandwidth to review complex training materials</li>
-                </ul>
-                <p className={typography.body}>
-                  The Onsite Tool had to be usable without training, and it needed a flexible model for creating pools
-                  of students.
-                </p>
-
-                <h4 className={cn(typography.h4, "mb-4 mt-6")}>New data structure</h4>
-                <p className={cn(typography.body, "mb-2")}>
-                  The original thinking that 1 pool = 1 classroom would not work in a school setting
-                </p>
-                <p className={typography.body}>
-                  Students often moved between classrooms and schools within a district, so it would be difficult to
-                  manage in the Admin Dashboard or on Color's backend
-                </p>
-              </div>
-            </section>
-
-            <section className="mb-16">
-              <h2 className={cn(typography.h2, "mb-4")}>Iteration 2: Search-first</h2>
-              <p className={typography.body}>
                 Teachers are busy and needed a simple, easy-to-understand product. Plus, they would not only be using a
                 digital tool for pooled testing; they would also be juggling samples and managing students. Therefore, I
                 proposed a solution that utilized the following principles:
@@ -317,6 +270,9 @@ export default function K12TestingPage() {
               <p className={typography.body}>
                 It would require more engineering effort, but it responded to real needs of teachers and their
                 environment.
+              </p>
+              <p className={typography.body}>
+                In the new workflow, each step of the pooled testing process is a focused screen with one clear action.
               </p>
             </section>
 
