@@ -300,6 +300,18 @@ export default function K12TestingPage() {
                   School staff would be using their personal mobile devices, so we needed a mobile-first experience.
                 </p>
               </div>
+
+              <div className="mt-8">
+                <ImageLightbox
+                  src="/images/5-pooled-testing-start.jpg"
+                  alt="Mobile interface showing the Start a new pool screen with barcode input"
+                  className="w-full rounded-lg border border-border"
+                />
+                <p className={cn(typography.body, "mt-4 text-center text-muted-foreground")}>
+                  In the new workflow, students would line up outside of a testing room. Inside the room, school staff
+                  would use the Onsite Tool on their personal mobile phones.
+                </p>
+              </div>
             </section>
 
             <section className="mb-16">
