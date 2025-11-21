@@ -11,6 +11,30 @@ export const metadata: Metadata = {
   title: "Katie Rieger | Product Designer",
   description:
     "Strategic product designer bringing design to mission-driven teams in healthcare, climate, and education.",
+  openGraph: {
+    title: "Katie Rieger | Product Designer",
+    description:
+      "Strategic product designer bringing design to mission-driven teams in healthcare, climate, and education.",
+    url: "https://katierieger.com", // Replace with your actual domain
+    siteName: "Katie Rieger",
+    images: [
+      {
+        url: "/og-image.png", // This is the image that will display when you share your URL
+        width: 1200,
+        height: 630,
+        alt: "Katie Rieger - Product Designer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Katie Rieger | Product Designer",
+    description:
+      "Strategic product designer bringing design to mission-driven teams in healthcare, climate, and education.",
+    images: ["/og-image.png"],
+  },
   icons: {
     icon: [
       {
