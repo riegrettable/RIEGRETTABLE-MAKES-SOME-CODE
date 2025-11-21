@@ -233,13 +233,9 @@ export default function LumiCaseStudy() {
       <section className="space-y-6">
         <h2 className={typography.h2}>Impact</h2>
         <p className={typography.body}>
-          This work has established strong rapport with our districts and key teachers within those districts who are
-          advocates of Lumi because our team listens to their feedback and iterates quickly to build a better product
-          for them and their students.
-        </p>
-        <p className={typography.body}>
-          We have seen a <strong>42% increase</strong> in the number of teachers who have launched projects in their
-          classrooms since the latest iteration.
+          This approach has built strong relationships with districts and teachers, who advocate for Lumi because we
+          listen to their feedback and iterate quickly. Since the latest iteration, we've seen a{" "}
+          <strong>42% increase</strong> in teachers launching projects in their classrooms.
         </p>
       </section>
 
