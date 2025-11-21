@@ -302,8 +302,8 @@ export default function K12TestingPage() {
 
                 <div className="mt-6">
                   <ImageLightbox
-                    src="/images/5-pooled-testing-mobile.png"
-                    alt="Mobile interface showing the Start a new pool screen with barcode input for Cincinnati Middle School"
+                    src="/images/workflow-diagram.webp"
+                    alt="Physical workflow diagram showing students lined up in hallway, with swab stations and staff using mobile phones"
                     className="w-full rounded-lg"
                   />
                   <p className={cn(typography.body, "mt-4 text-sm text-muted-foreground")}>
