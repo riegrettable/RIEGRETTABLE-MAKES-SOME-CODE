@@ -85,8 +85,9 @@ export default function Portfolio() {
               <div>
                 <h3 className={typography.h3}>Lumi, Founding Designer</h3>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                  Driving 0-to-1 product development, designing both student-facing creator tools and educator-facing
-                  analytics dashboards from the ground up.
+                  Drove 0-to-1 product development for an AI-powered storytelling tool for K-12 schools. Leading product
+                  strategy and design, transforming how students engage with writing through research-backed educational
+                  scaffolding.
                 </p>
               </div>
             </div>
