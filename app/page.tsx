@@ -147,8 +147,17 @@ export default function Portfolio() {
               <div>
                 <h3 className={typography.h3}>HER, Lead Product Designer</h3>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                  Completed a product pivot from dating to social networking for queer women, designing features that
-                  significantly boosted user engagement.
+                  Completed a{" "}
+                  <a
+                    href="https://techcrunch.com/2018/05/31/her-app-queer-women-communities-rebrand/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-foreground transition-colors"
+                  >
+                    product pivot
+                  </a>{" "}
+                  from dating to social networking for queer women, designing features that significantly boosted user
+                  engagement.
                 </p>
               </div>
             </div>
