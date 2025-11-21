@@ -80,7 +80,7 @@ export default function Portfolio() {
             {/* Lumi */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <img src="/images/frame-207242.png" alt="Lumi logo" className="w-12 h-12 rounded-lg" />
+                <img src="/images/frame-207242.png" alt="Lumi logo" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className={typography.h3}>Lumi, Founding Designer</h3>
@@ -94,7 +94,7 @@ export default function Portfolio() {
             {/* LayerUp */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <img src="/images/frame-207243.png" alt="LayerUp logo" className="w-12 h-12 rounded-lg" />
+                <img src="/images/frame-207243.png" alt="LayerUp logo" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className={typography.h3}>LayerUp, Founding Designer</h3>
@@ -108,7 +108,7 @@ export default function Portfolio() {
             {/* Climate Tech Design Consultant */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <img src="/images/frame-207244.png" alt="Climate Tech logo" className="w-12 h-12 rounded-lg" />
+                <img src="/images/frame-207244.png" alt="Climate Tech logo" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className={typography.h3}>Climate Tech Design Consultant</h3>
@@ -126,7 +126,7 @@ export default function Portfolio() {
             {/* Color Health */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <img src="/images/frame-207245.png" alt="Color Health logo" className="w-12 h-12 rounded-lg" />
+                <img src="/images/frame-207245.png" alt="Color Health logo" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className={typography.h3}>Color Health, Senior Product Designer</h3>
@@ -141,7 +141,7 @@ export default function Portfolio() {
             {/* HER */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <img src="/images/frame-207246.png" alt="HER logo" className="w-12 h-12 rounded-lg" />
+                <img src="/images/frame-207246.png" alt="HER logo" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className={typography.h3}>HER, Lead Product Designer</h3>
@@ -155,7 +155,7 @@ export default function Portfolio() {
             {/* BigMarker */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <img src="/images/frame-207247.png" alt="BigMarker logo" className="w-12 h-12 rounded-lg" />
+                <img src="/images/frame-207247.png" alt="BigMarker logo" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className={typography.h3}>BigMarker, UX Designer</h3>
