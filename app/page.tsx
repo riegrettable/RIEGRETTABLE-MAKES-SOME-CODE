@@ -126,8 +126,16 @@ export default function Portfolio() {
                   workflows specifically for field scientists.
                 </p>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-4")}>
-                  Collaborated with LA-based non-profits via dashboard.earth, designing native mobile experiences that
-                  promote community-based climate action across the city.
+                  Collaborated with LA-based non-profits via{" "}
+                  <a
+                    href="https://www.forbes.com/sites/afdhelaziz/2024/12/17/building-climate-resilience-through-technology-an-interview-with-gayatri-roshan-founder-of-dashboardearth/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-foreground transition-colors"
+                  >
+                    dashboard.earth
+                  </a>
+                  , designing native mobile experiences that promote community-based climate action across the city.
                 </p>
               </div>
             </div>
