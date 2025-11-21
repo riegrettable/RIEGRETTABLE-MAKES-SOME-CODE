@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: "Katie Rieger | Product Designer",
   description:
     "Strategic product designer bringing design to mission-driven teams in healthcare, climate, and education.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -29,6 +28,7 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
