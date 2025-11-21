@@ -256,118 +256,24 @@ export default function K12TestingPage() {
             </section>
 
             <section className="mb-16">
-              <h2 className={cn(typography.h2, "mb-4")}>Iteration 2: Search-first</h2>
-              <p className={typography.body}>
+              <h2 className="text-2xl font-semibold mb-6">Iteration 2: Search-first</h2>
+              <p className="text-lg leading-relaxed mb-4">
                 Teachers are busy and needed a simple, easy-to-understand product. Plus, they would not only be using a
                 digital tool for pooled testing; they would also be juggling samples and managing students. Therefore, I
                 proposed a solution that utilized the following principles:
               </p>
-              <ul className={cn(typography.body, "space-y-2 list-disc list-inside mb-4")}>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
                 <li>Each step should have one clear task and one clear action</li>
                 <li>The experience should be search-first instead of relying on an expansive patient list</li>
                 <li>In lieu of training materials, speed bumps should be incorporated for error prevention</li>
               </ul>
-              <p className={typography.body}>
+              <p className="text-lg leading-relaxed mb-6">
                 It would require more engineering effort, but it responded to real needs of teachers and their
-                environment.
+                environment. In the new workflow, each step of the pooled testing process is a focused screen with one
+                clear action.
               </p>
-              <p className={typography.body}>
-                In the new workflow, each step of the pooled testing process is a focused screen with one clear action.
-              </p>
-            </section>
 
-            <section className="mb-16">
-              <ImageGallery
-                images={[
-                  {
-                    src: "/images/iteration2-01-start.png",
-                    alt: "Start a new pool screen with barcode entry and explanation about one task per step",
-                  },
-                  {
-                    src: "/images/iteration2-02-confirm.png",
-                    alt: "Confirmation modal to verify collection tube barcode with error prevention check",
-                  },
-                  {
-                    src: "/images/iteration2-03-add-participants.png",
-                    alt: "Add participants screen with student search for usability",
-                  },
-                  {
-                    src: "/images/iteration2-04-labels.png",
-                    alt: "Label screen with tagging system to help schools organize pools",
-                  },
-                  {
-                    src: "/images/iteration2-05-collect.png",
-                    alt: "Collect samples screen showing 6 student limit per pool",
-                  },
-                  {
-                    src: "/images/iteration2-06-close-tube.png",
-                    alt: "Close collection tube screen with clear instructions for final step",
-                  },
-                  {
-                    src: "/images/iteration2-07-submit-confirm.png",
-                    alt: "Submit confirmation modal with error prevention check",
-                  },
-                  {
-                    src: "/images/iteration2-08-completed.png",
-                    alt: "Completed screen with clear confirmation and return to homepage",
-                  },
-                ]}
-              />
-            </section>
-
-            <section className="mb-16">
-              <div className="bg-white rounded-lg p-6">
-                <div className="flex gap-6 overflow-x-auto pb-4">
-                  <img
-                    src="/images/iteration2-01-start.png"
-                    alt="Start a new pool screen with barcode entry field"
-                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
-                    onClick={() => {
-                      const lightbox = document.querySelector("[data-lightbox]") as HTMLElement
-                      if (lightbox) lightbox.click()
-                    }}
-                  />
-                  <img
-                    src="/images/iteration2-02-confirm.png"
-                    alt="Confirmation modal to verify collection tube barcode information"
-                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
-                  />
-                  <img
-                    src="/images/iteration2-03-add-participants.png"
-                    alt="Add participants screen with search functionality for finding students"
-                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
-                  />
-                  <img
-                    src="/images/iteration2-04-labels.png"
-                    alt="Label screen with tagging system for organizing pools by class and period"
-                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
-                  />
-                  <img
-                    src="/images/iteration2-05-collect.png"
-                    alt="Collect samples screen showing list of 6 participants with limit notification"
-                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
-                  />
-                  <img
-                    src="/images/iteration2-06-close-tube.png"
-                    alt="Close collection tube screen with instructions and submit button"
-                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
-                  />
-                  <img
-                    src="/images/iteration2-07-submit-confirm.png"
-                    alt="Confirmation modal before submitting pool with participant count"
-                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
-                  />
-                  <img
-                    src="/images/iteration2-08-completed.png"
-                    alt="Completed pool screen with success banner and ready to start next pool"
-                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
-                  />
-                </div>
-              </div>
-            </section>
-
-            <section className="mb-16">
-              <div className="bg-muted/30 p-4 sm:p-6 rounded-lg border border-border">
+              <div className="bg-muted/30 p-4 sm:p-6 rounded-lg border border-border mt-8">
                 <h3 className={cn(typography.h3, "mb-4 mt-6")}>Feedback</h3>
                 <p className={cn(typography.body, "mb-4")}>
                   The Commercial Team shared the prototype with Cincinnati Public Schools. It was well-received for its
