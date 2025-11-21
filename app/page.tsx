@@ -132,9 +132,17 @@ export default function Portfolio() {
               <div>
                 <h3 className={typography.h3}>Color Health, Senior Product Designer</h3>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                  Led the design of COVID-19 testing infrastructure that scaled to over 13,000 sites nationwide,
-                  developed the company's first immunization services, spearheaded medical equity initiatives, and
-                  helped grow the design team from 2 to 40 members.
+                  Led the design of{" "}
+                  <a
+                    href="https://www.prnewswire.com/news-releases/color-health-partners-with-cdc-to-increase-equitable-access-to-covid-19-testing-301583049.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-foreground transition-colors"
+                  >
+                    COVID-19 testing infrastructure
+                  </a>{" "}
+                  that scaled to over 13,000 sites nationwide, developed the company's first immunization services,
+                  spearheaded medical equity initiatives, and helped grow the design team from 2 to 40 members.
                 </p>
               </div>
             </div>
