@@ -277,6 +277,45 @@ export default function K12TestingPage() {
             </section>
 
             <section className="mb-16">
+              <ImageGallery
+                images={[
+                  {
+                    src: "/images/iteration2-01-start.png",
+                    alt: "Start a new pool screen with barcode entry and explanation about one task per step",
+                  },
+                  {
+                    src: "/images/iteration2-02-confirm.png",
+                    alt: "Confirmation modal to verify collection tube barcode with error prevention check",
+                  },
+                  {
+                    src: "/images/iteration2-03-add-participants.png",
+                    alt: "Add participants screen with student search for usability",
+                  },
+                  {
+                    src: "/images/iteration2-04-labels.png",
+                    alt: "Label screen with tagging system to help schools organize pools",
+                  },
+                  {
+                    src: "/images/iteration2-05-collect.png",
+                    alt: "Collect samples screen showing 6 student limit per pool",
+                  },
+                  {
+                    src: "/images/iteration2-06-close-tube.png",
+                    alt: "Close collection tube screen with clear instructions for final step",
+                  },
+                  {
+                    src: "/images/iteration2-07-submit-confirm.png",
+                    alt: "Submit confirmation modal with error prevention check",
+                  },
+                  {
+                    src: "/images/iteration2-08-completed.png",
+                    alt: "Completed screen with clear confirmation and return to homepage",
+                  },
+                ]}
+              />
+            </section>
+
+            <section className="mb-16">
               <div className="bg-white rounded-lg p-6">
                 <div className="flex gap-6 overflow-x-auto pb-4">
                   <img
@@ -329,7 +368,7 @@ export default function K12TestingPage() {
 
             <section className="mb-16">
               <div className="bg-muted/30 p-4 sm:p-6 rounded-lg border border-border">
-                <h3 className={cn(typography.h3, "mb-4")}>Feedback</h3>
+                <h3 className={cn(typography.h3, "mb-4 mt-6")}>Feedback</h3>
                 <p className={cn(typography.body, "mb-4")}>
                   The Commercial Team shared the prototype with Cincinnati Public Schools. It was well-received for its
                   usability, but we had a handful of new problems.

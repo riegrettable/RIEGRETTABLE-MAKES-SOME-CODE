@@ -56,14 +56,14 @@ export function ImageGallery({ images }: ImageGalleryProps) {
       </div>
 
       {/* Thumbnail Strip */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="flex gap-4 overflow-x-auto pb-2">
         {images.map((image, index) => (
           <ImageLightbox
             key={index}
             src={image.src || "/placeholder.svg"}
             alt={image.alt}
             className={cn(
-              "w-full rounded-lg transition-all cursor-pointer",
+              "h-32 w-auto flex-shrink-0 rounded-lg transition-all cursor-pointer",
               selectedIndex === index ? "ring-2 ring-primary opacity-100" : "opacity-60 hover:opacity-100",
             )}
             onClick={(e) => {
