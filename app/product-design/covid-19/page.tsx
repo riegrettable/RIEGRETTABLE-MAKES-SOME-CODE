@@ -189,10 +189,18 @@ export default function ColorCovidCaseStudy() {
             </p>
 
             <p className={typography.body}>
-              At our United Airlines partnership site at SFO, wait times were unacceptably long. Rather than guessing at
-              solutions, I went onsite to watch clinicians work. I immediately saw the problem: scanning small, round
-              test tube barcodes with large iPads required awkward one-handed positioning that slowed down the entire
-              process.
+              At our{" "}
+              <a
+                href="https://techcrunch.com/2020/09/24/united-airlines-is-making-covid-19-tests-available-to-passengers-powered-in-part-by-color/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground transition-colors"
+              >
+                United Airlines partnership
+              </a>{" "}
+              site at SFO, wait times were unacceptably long. Rather than guessing at solutions, I went onsite to watch
+              clinicians work. I immediately saw the problem: scanning small, round test tube barcodes with large iPads
+              required awkward one-handed positioning that slowed down the entire process.
             </p>
 
             <p className={typography.body}>
