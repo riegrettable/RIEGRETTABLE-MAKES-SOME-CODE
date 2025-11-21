@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     siteName: "Katie Rieger",
     images: [
       {
-        url: "/og-image.png", // This is the image that will display when you share your URL
+        url: "/og-image.webp",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "Katie Rieger - Product Designer",
       },
     ],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Katie Rieger | Product Designer",
     description:
       "Strategic product designer bringing design to mission-driven teams in healthcare, climate, and education.",
-    images: ["/og-image.png"],
+    images: ["/og-image.webp"],
   },
   icons: {
     icon: [
