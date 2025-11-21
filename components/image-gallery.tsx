@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { ImageLightbox } from "@/components/image-lightbox"
 
 interface ImageGalleryProps {
   images: {
@@ -24,18 +24,14 @@ export function ImageGallery({ images }: ImageGalleryProps) {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 bg-white p-6 rounded-lg">
       {/* Main Image with Navigation */}
       <div className="relative group">
-        <div className="relative aspect-[16/10] rounded-lg overflow-hidden bg-muted">
-          <Image
-            src={images[selectedIndex].src || "/placeholder.svg"}
-            alt={images[selectedIndex].alt}
-            fill
-            className="object-contain"
-            sizes="(max-width: 1024px) 100vw, 1024px"
-          />
-        </div>
+        <ImageLightbox
+          src={images[selectedIndex].src || "/placeholder.svg"}
+          alt={images[selectedIndex].alt}
+          className="w-full rounded-lg"
+        />
 
         {/* Navigation Buttons */}
         <button
@@ -62,22 +58,19 @@ export function ImageGallery({ images }: ImageGalleryProps) {
       {/* Thumbnail Strip */}
       <div className="grid grid-cols-3 gap-4">
         {images.map((image, index) => (
-          <button
+          <ImageLightbox
             key={index}
-            onClick={() => setSelectedIndex(index)}
+            src={image.src || "/placeholder.svg"}
+            alt={image.alt}
             className={cn(
-              "relative aspect-[16/10] rounded-lg overflow-hidden transition-all",
+              "w-full rounded-lg transition-all cursor-pointer",
               selectedIndex === index ? "ring-2 ring-primary opacity-100" : "opacity-60 hover:opacity-100",
             )}
-          >
-            <Image
-              src={image.src || "/placeholder.svg"}
-              alt={image.alt}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 33vw, 340px"
-            />
-          </button>
+            onClick={(e) => {
+              e.preventDefault()
+              setSelectedIndex(index)
+            }}
+          />
         ))}
       </div>
     </div>
