@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import ImageLightbox from "@/components/image-lightbox"
+import { ImageGallery } from "@/components/image-gallery"
 import { ChevronLeft, Menu, X } from "lucide-react"
 import { typography } from "@/lib/typography"
 import { cn } from "@/lib/utils"
@@ -192,6 +193,40 @@ export default function K12TestingPage() {
 
             <section className="mb-16">
               <h2 className={cn(typography.h2, "mb-4")}>Iteration 1: Recycle Existing Product</h2>
+              <p className={typography.body}>
+                We only had one engineer on this project, and we might need to ship a functioning product with a week's
+                notice. Therefore, we decided as a team to reuse as much of the existing experience as possible.
+              </p>
+              <p className={typography.body}>
+                For K-12 schools, we operated under the assumption that 1 pool = 1 classroom.
+              </p>
+              <p className={typography.body}>
+                Under this assumption, I adapted the logged in homepage to reflect a list of pools instead of a list of
+                all patients.
+              </p>
+
+              <div className="mt-8">
+                <ImageGallery
+                  images={[
+                    {
+                      src: "/images/4.1-pooled-testing.jpg",
+                      alt: "Pooled testing dashboard showing list of classroom pools with model annotation: 1 row = 1 classroom = 1 pool",
+                    },
+                    {
+                      src: "/images/4.2-pooled-testing.jpg",
+                      alt: "Member confirmation screen showing nurse adding students from class to the pool",
+                    },
+                    {
+                      src: "/images/4.3-pooled-testing.jpg",
+                      alt: "Sample collection screen showing nurse adding pool barcode information",
+                    },
+                  ]}
+                />
+              </div>
+            </section>
+
+            <section className="mb-16">
+              <h2 className={cn(typography.h2, "mb-4")}>Iteration 2: Search-first</h2>
               <p className={typography.body}>
                 We only had one engineer on this project, and we might need to ship a functioning product with a week's
                 notice. Therefore, we decided as a team to reuse as much of the existing experience as possible.
