@@ -296,21 +296,21 @@ export default function K12TestingPage() {
                 </p>
 
                 <h4 className={cn(typography.h4, "mb-4 mt-6")}>New requirements: Mobile-first</h4>
-                <p className={typography.body}>
+                <p className={cn(typography.body, "mb-4")}>
                   School staff would be using their personal mobile devices, so we needed a mobile-first experience.
                 </p>
-              </div>
 
-              <div className="mt-8">
-                <ImageLightbox
-                  src="/images/5-pooled-testing-start.jpg"
-                  alt="Mobile interface showing the Start a new pool screen with barcode input"
-                  className="w-full rounded-lg border border-border"
-                />
-                <p className={cn(typography.body, "mt-4 text-center text-muted-foreground")}>
-                  In the new workflow, students would line up outside of a testing room. Inside the room, school staff
-                  would use the Onsite Tool on their personal mobile phones.
-                </p>
+                <div className="mt-6">
+                  <ImageLightbox
+                    src="/images/5-pooled-testing-mobile.png"
+                    alt="Mobile interface showing the Start a new pool screen with barcode input for Cincinnati Middle School"
+                    className="w-full rounded-lg"
+                  />
+                  <p className={cn(typography.body, "mt-4 text-sm text-muted-foreground")}>
+                    In the new workflow, students would line up outside of a testing room. Inside the room, school staff
+                    would use the Onsite Tool on their personal mobile phones.
+                  </p>
+                </div>
               </div>
             </section>
 
