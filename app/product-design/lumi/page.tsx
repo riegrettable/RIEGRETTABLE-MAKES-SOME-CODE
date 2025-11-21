@@ -316,7 +316,7 @@ export default function LumiCaseStudy() {
 
         {/* Case Study Navigation */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-20">
-          <CaseStudyNav currentSlug="lumi" />
+          <CaseStudyNav currentProjectId="lumi" />
         </div>
       </div>
     </PasswordProtection>

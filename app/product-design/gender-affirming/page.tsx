@@ -207,7 +207,7 @@ export default function GenderAffirmingPage() {
             </div>
           </div>
 
-          <CaseStudyNav currentProject="gender-affirming" />
+          <CaseStudyNav currentProjectId="gender-affirming" />
         </article>
       </div>
     </PasswordProtection>

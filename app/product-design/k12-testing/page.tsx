@@ -358,7 +358,7 @@ export default function K12PooledTesting() {
           </article>
 
           <div className="max-w-4xl mx-auto px-6 py-12 border-t border-border">
-            <CaseStudyNav currentProject="k12-testing" />
+            <CaseStudyNav currentProjectId="k12-testing" />
           </div>
         </main>
       </div>
