@@ -78,62 +78,92 @@ export default function Portfolio() {
 
           <div className="space-y-16">
             {/* Lumi */}
-            <div>
-              <h3 className={typography.h3}>Lumi, Founding Designer</h3>
-              <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                Driving 0-to-1 product development, designing both student-facing creator tools and educator-facing
-                analytics dashboards from the ground up.
-              </p>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0">
+                <img src="/images/frame-207242.png" alt="Lumi logo" className="w-12 h-12 rounded-lg" />
+              </div>
+              <div>
+                <h3 className={typography.h3}>Lumi, Founding Designer</h3>
+                <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
+                  Driving 0-to-1 product development, designing both student-facing creator tools and educator-facing
+                  analytics dashboards from the ground up.
+                </p>
+              </div>
             </div>
 
             {/* LayerUp */}
-            <div>
-              <h3 className={typography.h3}>LayerUp, Founding Designer</h3>
-              <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                Transformed a business-in-a-box tool for insulation contractors from MVP to a comprehensive product
-                suite.
-              </p>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0">
+                <img src="/images/frame-207243.png" alt="LayerUp logo" className="w-12 h-12 rounded-lg" />
+              </div>
+              <div>
+                <h3 className={typography.h3}>LayerUp, Founding Designer</h3>
+                <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
+                  Transformed a business-in-a-box tool for insulation contractors from MVP to a comprehensive product
+                  suite.
+                </p>
+              </div>
             </div>
 
             {/* Climate Tech Design Consultant */}
-            <div>
-              <h3 className={typography.h3}>Climate Tech Design Consultant</h3>
-              <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                Designed and shipped an iOS MVP for tracking global fish populations in just 3 weeks, optimizing
-                workflows specifically for field scientists.
-              </p>
-              <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-4")}>
-                Collaborated with LA-based non-profits via dashboard.earth, designing native mobile experiences that
-                promote community-based climate action across the city.
-              </p>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0">
+                <img src="/images/frame-207244.png" alt="Climate Tech logo" className="w-12 h-12 rounded-lg" />
+              </div>
+              <div>
+                <h3 className={typography.h3}>Climate Tech Design Consultant</h3>
+                <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
+                  Designed and shipped an iOS MVP for tracking global fish populations in just 3 weeks, optimizing
+                  workflows specifically for field scientists.
+                </p>
+                <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-4")}>
+                  Collaborated with LA-based non-profits via dashboard.earth, designing native mobile experiences that
+                  promote community-based climate action across the city.
+                </p>
+              </div>
             </div>
 
             {/* Color Health */}
-            <div>
-              <h3 className={typography.h3}>Color Health, Senior Product Designer</h3>
-              <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                Led the design of COVID-19 testing infrastructure that scaled to over 13,000 sites nationwide, developed
-                the company's first immunization services, spearheaded medical equity initiatives, and helped grow the
-                design team from 2 to 40 members.
-              </p>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0">
+                <img src="/images/frame-207245.png" alt="Color Health logo" className="w-12 h-12 rounded-lg" />
+              </div>
+              <div>
+                <h3 className={typography.h3}>Color Health, Senior Product Designer</h3>
+                <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
+                  Led the design of COVID-19 testing infrastructure that scaled to over 13,000 sites nationwide,
+                  developed the company's first immunization services, spearheaded medical equity initiatives, and
+                  helped grow the design team from 2 to 40 members.
+                </p>
+              </div>
             </div>
 
             {/* HER */}
-            <div>
-              <h3 className={typography.h3}>HER, Lead Product Designer</h3>
-              <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                Completed a product pivot from dating to social networking for queer women, designing features that
-                significantly boosted user engagement.
-              </p>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0">
+                <img src="/images/frame-207246.png" alt="HER logo" className="w-12 h-12 rounded-lg" />
+              </div>
+              <div>
+                <h3 className={typography.h3}>HER, Lead Product Designer</h3>
+                <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
+                  Completed a product pivot from dating to social networking for queer women, designing features that
+                  significantly boosted user engagement.
+                </p>
+              </div>
             </div>
 
             {/* BigMarker */}
-            <div>
-              <h3 className={typography.h3}>BigMarker, UX Designer</h3>
-              <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                Designed webinar marketing tools including one-click instant meetings for both enterprise and SMB
-                customers.
-              </p>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0">
+                <img src="/images/frame-207247.png" alt="BigMarker logo" className="w-12 h-12 rounded-lg" />
+              </div>
+              <div>
+                <h3 className={typography.h3}>BigMarker, UX Designer</h3>
+                <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
+                  Designed webinar marketing tools including one-click instant meetings for both enterprise and SMB
+                  customers.
+                </p>
+              </div>
             </div>
           </div>
         </div>
