@@ -38,7 +38,8 @@ export default function LumiCaseStudy() {
           />
         </div>
 
-        <div className="bg-muted/30 p-6 sm:p-8 rounded-lg border border-border">
+        {/* Updated background to light yellow to call out the opportunity */}
+        <div className="bg-yellow-50 dark:bg-yellow-950/30 p-6 sm:p-8 rounded-lg border border-yellow-200 dark:border-yellow-800">
           <h3 className={cn(typography.h3, "mb-3")}>The opportunity</h3>
           <p className={typography.body}>
             How might AI support learning, not replace learning, while still engaging students?
