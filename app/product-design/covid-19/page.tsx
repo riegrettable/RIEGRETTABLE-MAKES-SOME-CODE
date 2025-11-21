@@ -199,6 +199,16 @@ export default function ColorCovidCaseStudy() {
               By bringing this user insight back to my team, we implemented external barcode scanners that dramatically
               improved throughput and made clinicians' jobs easier.
             </p>
+
+            <div className="mt-8">
+              <ImageLightbox
+                src="/images/barcode.jpg"
+                alt="COVID-19 testing station setup with clinician scanning test tube barcodes using external scanner, showing organized box of test tubes, tablet device, and hand sanitizer"
+                width={1200}
+                height={900}
+                className="rounded-lg w-full"
+              />
+            </div>
           </section>
 
           {/* K-12 Schools */}
