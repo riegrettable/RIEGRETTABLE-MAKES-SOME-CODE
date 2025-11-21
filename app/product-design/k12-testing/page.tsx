@@ -277,42 +277,54 @@ export default function K12TestingPage() {
             </section>
 
             <section className="mb-16">
-              <ImageGallery
-                images={[
-                  {
-                    src: "/images/iteration2-01-start.png",
-                    alt: "Start a new pool screen with barcode entry field",
-                  },
-                  {
-                    src: "/images/iteration2-02-confirm.png",
-                    alt: "Confirmation modal to verify collection tube barcode information",
-                  },
-                  {
-                    src: "/images/iteration2-03-add-participants.png",
-                    alt: "Add participants screen with search functionality for finding students",
-                  },
-                  {
-                    src: "/images/iteration2-04-labels.png",
-                    alt: "Label screen with tagging system for organizing pools by class and period",
-                  },
-                  {
-                    src: "/images/iteration2-05-collect.png",
-                    alt: "Collect samples screen showing list of 6 participants with limit notification",
-                  },
-                  {
-                    src: "/images/iteration2-06-close-tube.png",
-                    alt: "Close collection tube screen with instructions and submit button",
-                  },
-                  {
-                    src: "/images/iteration2-07-submit-confirm.png",
-                    alt: "Confirmation modal before submitting pool with participant count",
-                  },
-                  {
-                    src: "/images/iteration2-08-completed.png",
-                    alt: "Completed pool screen with success banner and ready to start next pool",
-                  },
-                ]}
-              />
+              <div className="bg-white rounded-lg p-6">
+                <div className="flex gap-6 overflow-x-auto pb-4">
+                  <img
+                    src="/images/iteration2-01-start.png"
+                    alt="Start a new pool screen with barcode entry field"
+                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
+                    onClick={() => {
+                      const lightbox = document.querySelector("[data-lightbox]") as HTMLElement
+                      if (lightbox) lightbox.click()
+                    }}
+                  />
+                  <img
+                    src="/images/iteration2-02-confirm.png"
+                    alt="Confirmation modal to verify collection tube barcode information"
+                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
+                  />
+                  <img
+                    src="/images/iteration2-03-add-participants.png"
+                    alt="Add participants screen with search functionality for finding students"
+                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
+                  />
+                  <img
+                    src="/images/iteration2-04-labels.png"
+                    alt="Label screen with tagging system for organizing pools by class and period"
+                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
+                  />
+                  <img
+                    src="/images/iteration2-05-collect.png"
+                    alt="Collect samples screen showing list of 6 participants with limit notification"
+                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
+                  />
+                  <img
+                    src="/images/iteration2-06-close-tube.png"
+                    alt="Close collection tube screen with instructions and submit button"
+                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
+                  />
+                  <img
+                    src="/images/iteration2-07-submit-confirm.png"
+                    alt="Confirmation modal before submitting pool with participant count"
+                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
+                  />
+                  <img
+                    src="/images/iteration2-08-completed.png"
+                    alt="Completed pool screen with success banner and ready to start next pool"
+                    className="h-[500px] w-auto rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-shadow"
+                  />
+                </div>
+              </div>
             </section>
 
             <section className="mb-16">
