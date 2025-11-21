@@ -61,11 +61,7 @@ export default function Portfolio() {
             <h1 className={cn(typography.h1, "mb-6")}>I bring strategic product design to mission-driven teams.</h1>
             <p className={cn(typography.bodyLg, "text-foreground/60 leading-relaxed")}>
               I've shaped design solutions for healthcare, climate action, and education. These days, I'm improving
-              outcomes in education as the Founding Designer at{" "}
-              <a href="https://lumi.com" className="underline hover:text-foreground transition-colors">
-                Lumi
-              </a>
-              .
+              outcomes in education as the Founding Designer at Lumi.
             </p>
           </div>
         </div>
@@ -85,17 +81,9 @@ export default function Portfolio() {
               <div>
                 <h3 className={typography.h3}>Lumi, Founding Designer</h3>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                  Drove 0-to-1 product development for an{" "}
-                  <a
-                    href="https://www.opb.org/article/2025/08/06/colin-kaepernick-surprise-visit-pps-ai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-foreground transition-colors"
-                  >
-                    AI-powered storytelling tool
-                  </a>{" "}
-                  for K-12 schools. Leading product strategy and design, transforming how students engage with writing
-                  through research-backed educational scaffolding.
+                  Drove 0-to-1 product development for an AI-powered storytelling tool for K-12 schools. Leading product
+                  strategy and design, transforming how students engage with writing through research-backed educational
+                  scaffolding.
                 </p>
               </div>
             </div>
@@ -126,16 +114,8 @@ export default function Portfolio() {
                   workflows specifically for field scientists.
                 </p>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-4")}>
-                  Collaborated with LA-based non-profits via{" "}
-                  <a
-                    href="https://www.forbes.com/sites/afdhelaziz/2024/12/17/building-climate-resilience-through-technology-an-interview-with-gayatri-roshan-founder-of-dashboardearth/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-foreground transition-colors"
-                  >
-                    dashboard.earth
-                  </a>
-                  , designing native mobile experiences that promote community-based climate action across the city.
+                  Collaborated with LA-based non-profits via dashboard.earth, designing native mobile experiences that
+                  promote community-based climate action across the city.
                 </p>
               </div>
             </div>
@@ -148,17 +128,9 @@ export default function Portfolio() {
               <div>
                 <h3 className={typography.h3}>Color Health, Senior Product Designer</h3>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                  Led the design of{" "}
-                  <a
-                    href="https://www.prnewswire.com/news-releases/color-health-partners-with-cdc-to-increase-equitable-access-to-covid-19-testing-301583049.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-foreground transition-colors"
-                  >
-                    COVID-19 testing infrastructure
-                  </a>{" "}
-                  that scaled to over 13,000 sites nationwide, developed the company's first immunization services,
-                  spearheaded medical equity initiatives, and helped grow the design team from 2 to 40 members.
+                  Led the design of COVID-19 testing infrastructure that scaled to over 13,000 sites nationwide,
+                  developed the company's first immunization services, spearheaded medical equity initiatives, and
+                  helped grow the design team from 2 to 40 members.
                 </p>
               </div>
             </div>
@@ -171,17 +143,8 @@ export default function Portfolio() {
               <div>
                 <h3 className={typography.h3}>HER, Lead Product Designer</h3>
                 <p className={cn(typography.bodySm, "text-foreground/60 leading-relaxed mt-3")}>
-                  Completed a{" "}
-                  <a
-                    href="https://techcrunch.com/2018/05/31/her-app-queer-women-communities-rebrand/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-foreground transition-colors"
-                  >
-                    product pivot
-                  </a>{" "}
-                  from dating to social networking for queer women, designing features that significantly boosted user
-                  engagement.
+                  Completed a product pivot from dating to social networking for queer women, designing features that
+                  significantly boosted user engagement.
                 </p>
               </div>
             </div>
