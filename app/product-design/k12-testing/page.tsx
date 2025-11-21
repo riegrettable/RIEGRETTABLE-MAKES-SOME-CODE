@@ -300,13 +300,13 @@ export default function K12TestingPage() {
                   School staff would be using their personal mobile devices, so we needed a mobile-first experience.
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-6 flex flex-col items-center">
                   <ImageLightbox
                     src="/images/workflow-diagram.webp"
                     alt="Physical workflow diagram showing students lined up in hallway, with swab stations and staff using mobile phones"
                     className="w-full max-w-[400px] rounded-lg"
                   />
-                  <p className={cn(typography.body, "mt-4 text-sm text-muted-foreground")}>
+                  <p className={cn(typography.body, "mt-4 text-sm text-muted-foreground text-center")}>
                     In the new workflow, students would line up outside of a testing room. Inside the room, school staff
                     would use the Onsite Tool on their personal mobile phones.
                   </p>
