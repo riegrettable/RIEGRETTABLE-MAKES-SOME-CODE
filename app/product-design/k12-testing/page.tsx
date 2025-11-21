@@ -277,6 +277,45 @@ export default function K12TestingPage() {
             </section>
 
             <section className="mb-16">
+              <ImageGallery
+                images={[
+                  {
+                    src: "/images/iteration2-01-start.png",
+                    alt: "Start a new pool screen with barcode entry field",
+                  },
+                  {
+                    src: "/images/iteration2-02-confirm.png",
+                    alt: "Confirmation modal to verify collection tube barcode information",
+                  },
+                  {
+                    src: "/images/iteration2-03-add-participants.png",
+                    alt: "Add participants screen with search functionality for finding students",
+                  },
+                  {
+                    src: "/images/iteration2-04-labels.png",
+                    alt: "Label screen with tagging system for organizing pools by class and period",
+                  },
+                  {
+                    src: "/images/iteration2-05-collect.png",
+                    alt: "Collect samples screen showing list of 6 participants with limit notification",
+                  },
+                  {
+                    src: "/images/iteration2-06-close-tube.png",
+                    alt: "Close collection tube screen with instructions and submit button",
+                  },
+                  {
+                    src: "/images/iteration2-07-submit-confirm.png",
+                    alt: "Confirmation modal before submitting pool with participant count",
+                  },
+                  {
+                    src: "/images/iteration2-08-completed.png",
+                    alt: "Completed pool screen with success banner and ready to start next pool",
+                  },
+                ]}
+              />
+            </section>
+
+            <section className="mb-16">
               <div className="bg-muted/30 p-4 sm:p-6 rounded-lg border border-border">
                 <h3 className={cn(typography.h3, "mb-4")}>Feedback</h3>
                 <p className={cn(typography.body, "mb-4")}>
