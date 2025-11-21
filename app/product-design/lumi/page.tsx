@@ -30,8 +30,8 @@ export default function LumiCaseStudy() {
 
         <div className="my-8 rounded-lg overflow-hidden">
           <ImageLightbox
-            src="/images/1-20-20original-20product-20experience.png"
-            alt="Screenshot of Lumi's original product interface where a student asks 'Can you write it for me?' and Lumi responds by writing an entire character analysis document about Napoleon from Animal Farm. A pink callout highlights 'Lumi AI was originally able to write entire documents for students based on a simple request'"
+            src="/images/lumi-intro.png"
+            alt="Two overlapping browser windows showing the Lumi interface. The background window displays a project overview with cards for character analysis and exposition, highlighted by a tooltip saying 'Students use Lumi for applied learning through storytelling'. The foreground window shows a chat interface and document editor, with a tooltip pointing to the chat saying 'Lumi AI was originally able to write entire documents for students based on a simple request'."
             width={1400}
             height={900}
             className="rounded-lg"
