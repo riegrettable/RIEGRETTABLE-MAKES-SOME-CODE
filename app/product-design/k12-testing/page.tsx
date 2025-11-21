@@ -240,32 +240,17 @@ export default function K12TestingPage() {
                   <li>It was unlikely they would have bandwidth to review complex training materials</li>
                 </ul>
                 <p className={typography.body}>
-                  <strong>Learning:</strong> The Onsite Tool had to be usable without training, and it needed a flexible
-                  model for creating pools of students.
+                  The Onsite Tool had to be usable without training, and it needed a flexible model for creating pools
+                  of students.
                 </p>
 
                 <h4 className={cn(typography.h4, "mb-4 mt-6")}>New data structure</h4>
-                <ul className={cn(typography.body, "space-y-2 list-disc list-inside mb-4")}>
-                  <li>The original thinking that 1 pool = 1 classroom would not work in a school setting</li>
-                  <li>
-                    Students often moved between classrooms and schools within a district, so it would be difficult to
-                    manage in the Admin Dashboard or on Color's backend
-                  </li>
-                  <li>Instead, each student needed to be identified individually by their ID number</li>
-                </ul>
-                <p className={typography.body}>
-                  <strong>Learning:</strong> We needed a flexible model that could accommodate individual students in
-                  district databases moving across classrooms and schools.
-                </p>
-
-                <h4 className={cn(typography.h4, "mb-4 mt-6")}>New digital use case</h4>
-                <p className={cn(typography.body, "mb-4")}>
-                  To minimize in-person contact during COVID-19, many districts were allowing parents to pick up sample
-                  collection kits from schools and test at home.
+                <p className={cn(typography.body, "mb-2")}>
+                  The original thinking that 1 pool = 1 classroom would not work in a school setting
                 </p>
                 <p className={typography.body}>
-                  <strong>Learning:</strong> The tool needed to be accessible from a personal device - it needed to be
-                  mobile responsive.
+                  Students often moved between classrooms and schools within a district, so it would be difficult to
+                  manage in the Admin Dashboard or on Color's backend
                 </p>
               </div>
             </section>
@@ -302,32 +287,17 @@ export default function K12TestingPage() {
                   <li>It was unlikely they would have bandwidth to review complex training materials</li>
                 </ul>
                 <p className={typography.body}>
-                  <strong>Learning:</strong> The Onsite Tool had to be usable without training, and it needed a flexible
-                  model for creating pools of students.
+                  The Onsite Tool had to be usable without training, and it needed a flexible model for creating pools
+                  of students.
                 </p>
 
                 <h4 className={cn(typography.h4, "mb-4 mt-6")}>New data structure</h4>
-                <ul className={cn(typography.body, "space-y-2 list-disc list-inside mb-4")}>
-                  <li>The original thinking that 1 pool = 1 classroom would not work in a school setting</li>
-                  <li>
-                    Students often moved between classrooms and schools within a district, so it would be difficult to
-                    manage in the Admin Dashboard or on Color's backend
-                  </li>
-                  <li>Instead, each student needed to be identified individually by their ID number</li>
-                </ul>
-                <p className={typography.body}>
-                  <strong>Learning:</strong> We needed a flexible model that could accommodate individual students in
-                  district databases moving across classrooms and schools.
-                </p>
-
-                <h4 className={cn(typography.h4, "mb-4 mt-6")}>New digital use case</h4>
-                <p className={cn(typography.body, "mb-4")}>
-                  To minimize in-person contact during COVID-19, many districts were allowing parents to pick up sample
-                  collection kits from schools and test at home.
+                <p className={cn(typography.body, "mb-2")}>
+                  The original thinking that 1 pool = 1 classroom would not work in a school setting
                 </p>
                 <p className={typography.body}>
-                  <strong>Learning:</strong> The tool needed to be accessible from a personal device - it needed to be
-                  mobile responsive.
+                  Students often moved between classrooms and schools within a district, so it would be difficult to
+                  manage in the Admin Dashboard or on Color's backend
                 </p>
               </div>
             </section>
