@@ -273,6 +273,53 @@ export default function K12TestingPage() {
                 clear action.
               </p>
 
+              <div className="my-8">
+                <ImageGallery
+                  images={[
+                    {
+                      src: "/images/1-iteration2.png",
+                      alt: "Start a new pool screen with barcode entry",
+                      caption: "Step 1: Start a new pool by entering the collection tube barcode",
+                    },
+                    {
+                      src: "/images/2-iteration2.png",
+                      alt: "Confirmation dialog to verify barcode matches collection tube",
+                      caption: "Step 2: Confirm the barcode information matches the collection tube",
+                    },
+                    {
+                      src: "/images/3-iteration2.png",
+                      alt: "Add participants screen with student search functionality",
+                      caption: "Step 3: Add participants using the search-first interface",
+                    },
+                    {
+                      src: "/images/4-iteration2.png",
+                      alt: "Give pool a label screen with tagging system",
+                      caption: "Step 4: Add optional labels to organize pools",
+                    },
+                    {
+                      src: "/images/5-iteration2.png",
+                      alt: "Collect samples screen showing list of 6 participants",
+                      caption: "Step 5: Collect samples from each participant (max 6 per pool)",
+                    },
+                    {
+                      src: "/images/6-iteration2.png",
+                      alt: "Close the collection tube screen with instructions",
+                      caption: "Step 6: Close the collection tube and place in biohazard bag",
+                    },
+                    {
+                      src: "/images/7-iteration2.png",
+                      alt: "Submit pool confirmation dialog",
+                      caption: "Step 7: Confirm submission of the completed pool",
+                    },
+                    {
+                      src: "/images/8-iteration2.png",
+                      alt: "Pool completed success screen",
+                      caption: "Step 8: Completion confirmation and return to start new pool",
+                    },
+                  ]}
+                />
+              </div>
+
               <div className="bg-muted/30 p-4 sm:p-6 rounded-lg border border-border mt-8">
                 <h3 className={cn(typography.h3, "mb-4 mt-6")}>Feedback</h3>
                 <p className={cn(typography.body, "mb-4")}>
