@@ -20,8 +20,7 @@ export default function ResumePage() {
     try {
       await navigator.clipboard.writeText(url)
       toast({
-        title: "Link copied!",
-        description: "Resume link copied to clipboard",
+        description: "Link copied to clipboard",
       })
     } catch (err) {
       console.error("Copy failed:", err)
