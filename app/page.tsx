@@ -175,13 +175,8 @@ export default function Portfolio() {
             >
               LinkedIn
             </a>
-            <a
-              href="/resume-katie-rieger.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base underline hover:text-foreground/60 transition-colors"
-            >
-              Download resume
+            <a href="/resume" className="text-base underline hover:text-foreground/60 transition-colors">
+              View resume
             </a>
           </div>
         </div>
