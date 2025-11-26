@@ -178,22 +178,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="border-b border-border">
-        <div className="max-w-[1024px] mx-auto px-6 py-16">
-          <div className="flex flex-col gap-3">
-            <a
-              href="https://www.linkedin.com/in/riegeriegerieger/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base underline hover:text-foreground/60 transition-colors"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Footer Illustration Section */}
       <section id="work" className="py-24">
         <div className="max-w-[1024px] mx-auto px-6">
