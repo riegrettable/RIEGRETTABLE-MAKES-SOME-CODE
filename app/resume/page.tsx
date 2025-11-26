@@ -1,21 +1,77 @@
+"use client"
+
 import { SiteHeader } from "@/components/site-header"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Printer, Share2 } from "lucide-react"
 import { typography } from "@/lib/typography"
+import { Button } from "@/components/ui/button"
+import { useToast } from "@/hooks/use-toast"
 
 export default function ResumePage() {
+  const { toast } = useToast()
+
+  const handlePrint = () => {
+    window.print()
+  }
+
+  const handleShare = async () => {
+    const url = window.location.href
+
+    // Try using Web Share API first (mobile devices)
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: "Katie Rieger - Resume",
+          url: url,
+        })
+      } catch (err) {
+        // User cancelled or error occurred
+        if ((err as Error).name !== "AbortError") {
+          console.error("Share failed:", err)
+        }
+      }
+    } else {
+      // Fallback: copy to clipboard
+      try {
+        await navigator.clipboard.writeText(url)
+        toast({
+          title: "Link copied!",
+          description: "Resume link copied to clipboard",
+        })
+      } catch (err) {
+        console.error("Copy failed:", err)
+        toast({
+          title: "Copy failed",
+          description: "Unable to copy link to clipboard",
+          variant: "destructive",
+        })
+      }
+    }
+  }
+
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
 
       <main className="flex-1 w-full max-w-[800px] mx-auto px-4 sm:px-6 py-8 sm:py-12">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to home
-        </Link>
+        <div className="flex items-center justify-between mb-8">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back
+          </Link>
+
+          <div className="flex items-center gap-2">
+            <Button variant="ghost" size="icon" onClick={handlePrint} className="h-9 w-9" aria-label="Print resume">
+              <Printer className="h-4 w-4" />
+            </Button>
+            <Button variant="ghost" size="icon" onClick={handleShare} className="h-9 w-9" aria-label="Share resume">
+              <Share2 className="h-4 w-4" />
+            </Button>
+          </div>
+        </div>
 
         <div className="space-y-8">
           <header className="space-y-2 border-b pb-6">
