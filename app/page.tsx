@@ -25,7 +25,12 @@ export default function Portfolio() {
       {/* Experience Section */}
       <section id="experience" className="border-b border-border">
         <div className="max-w-[1024px] mx-auto px-6 py-24">
-          <h2 className={cn(typography.h2, "mb-16")}>Experience</h2>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-4 mb-16">
+            <h2 className={typography.h2}>Experience</h2>
+            <a href="/resume" className="text-base underline hover:text-foreground/60 transition-colors">
+              View full resume
+            </a>
+          </div>
 
           <div className="space-y-16">
             {/* Lumi */}
@@ -174,9 +179,6 @@ export default function Portfolio() {
               className="text-base underline hover:text-foreground/60 transition-colors"
             >
               LinkedIn
-            </a>
-            <a href="/resume" className="text-base underline hover:text-foreground/60 transition-colors">
-              View resume
             </a>
           </div>
         </div>
