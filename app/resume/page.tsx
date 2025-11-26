@@ -17,35 +17,19 @@ export default function ResumePage() {
   const handleShare = async () => {
     const url = window.location.href
 
-    // Try using Web Share API first (mobile devices)
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: "Katie Rieger - Resume",
-          url: url,
-        })
-      } catch (err) {
-        // User cancelled or error occurred
-        if ((err as Error).name !== "AbortError") {
-          console.error("Share failed:", err)
-        }
-      }
-    } else {
-      // Fallback: copy to clipboard
-      try {
-        await navigator.clipboard.writeText(url)
-        toast({
-          title: "Link copied!",
-          description: "Resume link copied to clipboard",
-        })
-      } catch (err) {
-        console.error("Copy failed:", err)
-        toast({
-          title: "Copy failed",
-          description: "Unable to copy link to clipboard",
-          variant: "destructive",
-        })
-      }
+    try {
+      await navigator.clipboard.writeText(url)
+      toast({
+        title: "Link copied!",
+        description: "Resume link copied to clipboard",
+      })
+    } catch (err) {
+      console.error("Copy failed:", err)
+      toast({
+        title: "Copy failed",
+        description: "Unable to copy link to clipboard",
+        variant: "destructive",
+      })
     }
   }
 
