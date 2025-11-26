@@ -27,9 +27,19 @@ export default function Portfolio() {
         <div className="max-w-[1024px] mx-auto px-6 py-24">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-4 mb-16">
             <h2 className={typography.h2}>Experience</h2>
-            <a href="/resume" className="text-base underline hover:text-foreground/60 transition-colors">
-              View full resume
-            </a>
+            <div className="flex gap-4 items-center">
+              <a
+                href="https://www.linkedin.com/in/riegeriegerieger/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base underline hover:text-foreground/60 transition-colors"
+              >
+                LinkedIn
+              </a>
+              <a href="/resume" className="text-base underline hover:text-foreground/60 transition-colors">
+                View full resume
+              </a>
+            </div>
           </div>
 
           <div className="space-y-16">
