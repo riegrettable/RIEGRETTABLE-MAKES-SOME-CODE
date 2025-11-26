@@ -15,23 +15,14 @@ export default function ResumePage() {
   }
 
   const handleShare = async () => {
-    console.log("[v0] Share button clicked")
-    const url = window.location.href
-    console.log("[v0] URL to copy:", url)
-
     try {
-      await navigator.clipboard.writeText(url)
-      console.log("[v0] Successfully copied to clipboard")
-      console.log("[v0] Calling toast with:", { description: "Link copied to clipboard" })
+      await navigator.clipboard.writeText(window.location.href)
       toast({
         description: "Link copied to clipboard",
       })
-      console.log("[v0] Toast called")
     } catch (err) {
-      console.error("[v0] Copy failed:", err)
       toast({
-        title: "Copy failed",
-        description: "Unable to copy link to clipboard",
+        description: "Failed to copy link",
         variant: "destructive",
       })
     }
