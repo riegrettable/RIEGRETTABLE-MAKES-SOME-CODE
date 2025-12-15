@@ -2,13 +2,13 @@
 
 import { SiteHeader } from "@/components/site-header"
 import Link from "next/link"
-import { ArrowLeft, Printer, Share2 } from "lucide-react"
+import { ArrowLeft, Printer, Share2, Check } from "lucide-react"
 import { typography } from "@/lib/typography"
 import { Button } from "@/components/ui/button"
-import { useToast } from "@/hooks/use-toast"
+import { useState } from "react"
 
 export default function ResumePage() {
-  const { toast } = useToast()
+  const [showCopied, setShowCopied] = useState(false)
 
   const handlePrint = () => {
     window.print()
@@ -17,14 +17,10 @@ export default function ResumePage() {
   const handleShare = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href)
-      toast({
-        description: "Link copied to clipboard",
-      })
+      setShowCopied(true)
+      setTimeout(() => setShowCopied(false), 2000)
     } catch (err) {
-      toast({
-        description: "Failed to copy link",
-        variant: "destructive",
-      })
+      console.error("Failed to copy link", err)
     }
   }
 
@@ -64,9 +60,17 @@ export default function ResumePage() {
               <Button variant="ghost" size="icon" onClick={handlePrint} className="h-9 w-9" aria-label="Print resume">
                 <Printer className="h-4 w-4" />
               </Button>
-              <Button variant="ghost" size="icon" onClick={handleShare} className="h-9 w-9" aria-label="Share resume">
-                <Share2 className="h-4 w-4" />
-              </Button>
+              <div className="relative">
+                <Button variant="ghost" size="icon" onClick={handleShare} className="h-9 w-9" aria-label="Share resume">
+                  <Share2 className="h-4 w-4" />
+                </Button>
+                {showCopied && (
+                  <div className="absolute top-full right-0 mt-2 px-3 py-2 bg-foreground text-background text-sm rounded-md shadow-lg flex items-center gap-2 whitespace-nowrap">
+                    <Check className="h-4 w-4" />
+                    Link copied to clipboard
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 
@@ -101,24 +105,26 @@ export default function ResumePage() {
               <p className="text-sm text-muted-foreground">AI-powered EdTech platform for creative learning.</p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  • Responsible for 0 to 1 product design, including a suite of creator tools for students and a suite
-                  of analytics tools for teachers and school administrators.
+                  • Led 0 to 1 product design as sole designer at 7-person team, shipping student creator tools and
+                  educator analytics platform to 4 partner districts and 200+ students in Q1 2025.
                 </li>
                 <li>
-                  • Defined Lumi's design principles for responsible AI in education, shaping strategy from AI that
-                  provides answers to students to AI that fosters critical thinking.
+                  • Conducted research with 20+ teachers across 5 districts and analyzed academic studies (MIT Media
+                  Lab), uncovering AI misuse patterns that drove strategic pivot from "AI co-creator" to "learning
+                  companion" model.
                 </li>
                 <li>
-                  • Facilitated design sprints to drive strategic and tactical alignment across product, engineering,
-                  and customer success.
+                  • Defined Lumi's responsible AI frameworks and design principles informed by educational research,
+                  shifting product strategy from an answer-providing AI experience to a pedagogically-sound AI platform.
                 </li>
                 <li>
-                  • Prototyped and tested a Socratic questioning AI approach with teachers, enabling product pivot
-                  validated by real classrooms.
+                  • Facilitated quarterly design sprints to align product, eng, and district success teams, reducing
+                  feature development cycle time by ~50% (from 4+ weeks to 2 weeks).
                 </li>
                 <li>
-                  • Established educator-centered design practices, running bi-weekly feedback sessions to ensure
-                  accessibility and usability at scale.
+                  • Established monthly educator feedback sessions with 20-teacher cohort across 5 districts, ensuring
+                  features are rooted in educational pedagogy and improving adoption from ~10% to 90% within 2 weeks of
+                  release.
                 </li>
               </ul>
             </section>
@@ -135,10 +141,13 @@ export default function ResumePage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  • Led UX design for a multi-platform MVP, creating contractor-friendly workflows that scaled into a
-                  full product within 12 months.
+                  • Led UX design for multi-platform MVP serving 10+ contractors, creating workflows that supported
+                  $500k+ in project value and contributed to successful acquisition.
                 </li>
-                <li>• Facilitated design sprints to align roadmap and support successful acquisition.</li>
+                <li>
+                  • Designed contractor-friendly interfaces that achieved 78% weekly active usage among early adopters,
+                  demonstrating product-market fit.
+                </li>
               </ul>
             </section>
 
@@ -154,12 +163,12 @@ export default function ResumePage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  • Large Pelagics Research Center: Designed iOS MVP for global fish population tracking, optimizing
-                  workflows for scientists in resource-limited conditions.
+                  • Large Pelagics Research Center: Designed HiTag, an iOS app that allows citizen scientists
+                  (commercial and recreational fishers) to aid data collection on tagged fish.
                 </li>
                 <li>
-                  • dashboard.earth: Collaborated with nonprofits on community-based climate solutions, designing native
-                  mobile experiences that promoted collective action.
+                  • dashboard.earth: Collaborated with 3 conservation nonprofits on L.A. community climate solutions,
+                  designing mobile experiences that facilitated climate actions for 1,000+ users in first 6 months.
                 </li>
               </ul>
             </section>
@@ -176,19 +185,22 @@ export default function ResumePage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  • Designed COVID-19 testing workflows used at &gt;13,000 sites across the U.S., optimized for outdated
-                  smartphones, low literacy, and multilingual contexts.
+                  • Designed COVID-19 testing workflows deployed across 13,000+ sites nationwide, processing 10M+ tests
+                  and serving diverse populations including non-English speakers and low-literacy users.
                 </li>
                 <li>
-                  • Created a scalable, inclusive design system that reduced medical barriers across healthcare
-                  offerings.
+                  • Partnered with Genetic Counselors to redesign genetic testing results delivery, creating access for
+                  transgender patients previously excluded by confusing language.
                 </li>
                 <li>
-                  • Partnered with Genetic Counselors to redesign genetic testing result delivery, improving
-                  accessibility for transgender patients.
+                  • Created a scalable, inclusive design system adopted across 8 product lines, reducing design
+                  inconsistencies by 60% and cutting engineering implementation time by 35%.
                 </li>
-                <li>• Mentored junior designers and help scale the design team from 2 to 40.</li>
-                <li>• Founded the Medical Equity Working Group to advance inclusive design practices.</li>
+                <li>• Mentored junior designers and contributed to scaling the design team from 2 to 40.</li>
+                <li>
+                  • Founded Medical Equity Working Group (12 cross-functional members), establishing inclusive design
+                  standards that influenced company-wide product policies.
+                </li>
               </ul>
             </section>
 
@@ -202,10 +214,13 @@ export default function ResumePage() {
               <p className="text-sm text-muted-foreground">Social app for queer women.</p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  • Led design and research during pivot from dating to social app, focusing on inclusive features
-                  (social feed, events, community tools) that boosted engagement.
+                  • Led design and research during strategic pivot from dating to social platform, designing community
+                  features (feed, events, groups) that increased daily active users by 40% and session length by 25%.
                 </li>
-                <li>• Directed company-wide rebrand across product and marketing.</li>
+                <li>
+                  • Conducted user research with 50+ members across 5 global cities, informing features that boosted App
+                  Store rating to 4.4 stars.
+                </li>
               </ul>
             </section>
 
