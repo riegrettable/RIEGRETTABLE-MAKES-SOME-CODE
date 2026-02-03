@@ -18,6 +18,9 @@ export function SiteHeader() {
     if (path === "/shop") {
       return pathname.startsWith("/shop")
     }
+    if (path === "/art") {
+      return pathname.startsWith("/art")
+    }
     return pathname.startsWith("/product-design")
   }
 
@@ -65,6 +68,17 @@ export function SiteHeader() {
             >
               Shop
             </Link>
+            <Link
+              href="/art"
+              className={cn(
+                typography.nav,
+                "hover:text-foreground/60 transition-colors relative",
+                isActive("/art") &&
+                  "after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-[2px] after:bg-foreground",
+              )}
+            >
+              Art
+            </Link>
           </nav>
 
           <button
@@ -107,6 +121,16 @@ export function SiteHeader() {
               )}
             >
               Shop
+            </Link>
+            <Link
+              href="/art"
+              className={cn(
+                typography.nav,
+                "hover:text-primary transition-colors relative",
+                isActive("/art") && "border-b-2 border-foreground pb-1",
+              )}
+            >
+              Art
             </Link>
           </nav>
         )}
